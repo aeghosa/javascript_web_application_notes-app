@@ -3,7 +3,8 @@ const NotesView = require("./NotesView");
 
 // 1. Setup the model with one note
 const model = new NotesModel();
-model.addNote('Te notes app is running');
+model.addNote("");
+console.log(model.getNotes());
 
 // 2. Setup the view
 const view = new NotesView(model);
